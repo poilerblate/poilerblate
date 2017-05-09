@@ -5,5 +5,5 @@ import App from './';
 test('Component should have h1 element with a text', () => {
   const app = shallow(<App />);
 
-  expect(app.find('h1').text()).toEqual('Boilerplate');
+  expect(app.find('h1').text()).toEqual('poilerblate');
 });
