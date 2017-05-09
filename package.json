@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack -p --config webpack.config.js",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "author": "Sami Keinänen <skope@iki.fi>",
   "license": "ISC",
