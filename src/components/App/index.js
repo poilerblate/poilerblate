@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 import './App.scss';
 
-export default class App extends Component {
+import actions from '../../actions';
+
+export class App extends Component {
   render() {
     return (
       <div className="boilerplate">
@@ -11,3 +17,17 @@ export default class App extends Component {
     )
   }
 }
+
+App.propTypes = {
+  actions: PropTypes.object,
+  example: PropTypes.object
+};
+
+export default connect(
+  (state) => state,
+  (dispatch) => {
+    return {
+      actions: bindActionCreators(actions, dispatch)
+    }
+  }
+)(App);
