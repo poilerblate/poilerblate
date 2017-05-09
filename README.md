@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/skope/poilerblate.svg?token=jnzpgovcYpqFiQcSVa8D&branch=master)](https://travis-ci.com/skope/poilerblate)
+
 # Boilerplate
 
 Web page boilerplate with [SASS](http://sass-lang.com/) support.
