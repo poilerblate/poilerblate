@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "poilerblate",
   "version": "0.2.1",
-  "description": "Web page boilerplate",
+  "description": "React boilerplate",
   "main": "index.js",
   "repository": "github:skope/poilerblate",
   "bugs": {
