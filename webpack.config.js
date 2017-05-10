@@ -53,7 +53,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Boilerplate',
+      title: 'poilerblate',
       template: 'src/templates/index.html',
       inject: 'body',
       cache: false
