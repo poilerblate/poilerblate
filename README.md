@@ -22,7 +22,7 @@ Production ready bundle is stored in `dist/` and can be used as-is.
 
 Issue command `npm test`. It runs test cases once and exits.
 
-If you want to run tests in watch mode, you can install [jest](https://facebook.github.io/jest/) globally with `npm i -g jest` and calling it with `jest --watch`.
+If you want to run tests in watch mode, you can either install [jest](https://facebook.github.io/jest/) globally with `npm i -g jest` and call it with `jest --watch` or do it with npm scripts with `npm test -- --watch`.
 
 Component specific tests are stored in `src/components/<ComponentName>/<ComponentName>.test.js` and actions/reducers tests in `__tests__/`.
 
