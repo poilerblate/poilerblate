@@ -5,21 +5,21 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import './App.scss';
+import './NotFound.scss';
 
 import actions from '../../actions';
 
-export class App extends Component {
+export class NotFound extends Component {
   render() {
     return (
-      <div className="boilerplate">
-        <h1>poilerblate</h1>
+      <div className="not-found">
+        <h1>page not found</h1>
       </div>
     )
   }
 }
 
-App.propTypes = {
+NotFound.propTypes = {
   actions: PropTypes.object,
   example: PropTypes.object
 };
@@ -31,4 +31,4 @@ export default withRouter(connect(
       actions: bindActionCreators(actions, dispatch)
     }
   }
-)(App));
+)(NotFound));
