@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import {
+  withRouter,
+  Link
+} from 'react-router-dom';
 
 import './NotFound.scss';
 
@@ -14,6 +17,7 @@ export class NotFound extends Component {
     return (
       <div className="not-found">
         <h1>page not found</h1>
+        <Link to="/">Back</Link>
       </div>
     )
   }
