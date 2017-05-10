@@ -17,8 +17,8 @@ import thunk from 'redux-thunk';
 
 import reducers from './reducers';
 
-import Container from './components/App';
-import NoMatch from './components/NotFound';
+import { App } from './components/App';
+import { NotFound } from './components/NotFound';
 
 let store = createStore(
   combineReducers(reducers),
@@ -29,8 +29,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Switch>
-        <Route exact path="/" component={Container} />
-        <Route component={NoMatch} />
+        <Route exact path="/" component={App} />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   </Provider>,
