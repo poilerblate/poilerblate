@@ -3,6 +3,10 @@
   "version": "0.2.0",
   "description": "Web page boilerplate",
   "main": "index.js",
+  "repository": "github:skope/poilerblate",
+  "bugs": {
+    "url": "https://github.com/skope/poilerblate/issues"
+  },
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack -p --config webpack.config.js",
