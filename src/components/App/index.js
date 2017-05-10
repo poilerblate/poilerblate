@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import {
+  withRouter,
+  Link
+} from 'react-router-dom';
 
 import './App.scss';
 
@@ -14,6 +17,9 @@ export class App extends Component {
     return (
       <div className="boilerplate">
         <h1>poilerblate</h1>
+        <Link to="/foo">
+          Link to non-existent route
+        </Link>
       </div>
     )
   }

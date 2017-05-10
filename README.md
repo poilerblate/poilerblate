@@ -2,6 +2,8 @@
 
 # poilerblate
 
+Boilerplate app to make React bootstrapping easier.
+
 What's included:
 
 - [React](https://github.com/facebook/react)
@@ -26,9 +28,11 @@ If you want to run tests in watch mode, you can either install [jest](https://fa
 
 Component specific tests are stored in `src/components/<ComponentName>/<ComponentName>.test.js` and actions/reducers tests in `__tests__/`.
 
+When you change output of a component, test for that component will probably fail because [jest snapshot](https://facebook.github.io/jest/docs/snapshot-testing.html) doesn't match. You can update snapshots by issuing `jest -u` if you have jest installed globally, or by `npm test -- -u`.
+
 ## Development
 
-Type `npm start` and development server is launched to (http://localhost:3000). If you want to set another port, environment variable PORT can be passed to the start script like `PORT=4000 npm start`.
+Type `npm start` and development server is launched to http://localhost:3000. If you want to set another port, environment variable PORT can be passed to the start script like `PORT=4000 npm start`.
 
 Main index page template is located in `src/templates/index.html`.
 
