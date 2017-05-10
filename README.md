@@ -5,7 +5,7 @@
 What's included:
 
 - [React](https://github.com/facebook/react)
-- [React Router 3](https://reacttraining.com/react-router/)
+- [React Router 4](https://reacttraining.com/react-router/)
 - [Redux](http://redux.js.org/)
 - [React Redux](https://github.com/reactjs/react-redux)
 - [SASS](http://sass-lang.com/)
