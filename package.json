@@ -13,7 +13,7 @@
     "test": "jest"
   },
   "author": "Sami Keinänen <skope@iki.fi>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-jest": "^19.0.0",
