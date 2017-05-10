@@ -1,9 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 import { NotFound } from './';
 
-test('Component should have h1 element with a text', () => {
-  const app = shallow(<NotFound />);
+describe('NotFound component', () => {
+  const tree = renderer.create(<NotFound />).toJSON();
 
-  expect(app.find('h1').text()).toEqual('page not found');
+  it('should render correctly', () => {
+    expect(tree).toMatchSnapshot();
+  });
 });

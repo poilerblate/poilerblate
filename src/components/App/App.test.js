@@ -1,9 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 import { App } from './';
 
-test('Component should have h1 element with a text', () => {
-  const app = shallow(<App />);
+describe('App component', () => {
+  const tree = renderer.create(<App />).toJSON();
 
-  expect(app.find('h1').text()).toEqual('poilerblate');
+  it('should render correctly', () => {
+    expect(tree).toMatchSnapshot();
+  });
 });
