@@ -28,7 +28,7 @@ Component specific tests are stored in `src/components/<ComponentName>/<Componen
 
 ## Development
 
-Type `npm start` and development server is launched to (http://localhost:3000). If you want to set another port, environment variable PORT can be passed to the start script like `PORT=4000 npm start`.
+Type `npm start` and development server is launched to http://localhost:3000. If you want to set another port, environment variable PORT can be passed to the start script like `PORT=4000 npm start`.
 
 Main index page template is located in `src/templates/index.html`.
 
