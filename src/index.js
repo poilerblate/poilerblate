@@ -10,8 +10,10 @@ import {
 import { Provider } from 'react-redux';
 import {
   createStore,
-  combineReducers
+  combineReducers,
+  applyMiddleware
 } from 'redux';
+import thunk from 'redux-thunk';
 
 import reducers from './reducers';
 
@@ -19,7 +21,8 @@ import Container from './components/App';
 import NoMatch from './components/NotFound';
 
 let store = createStore(
-  combineReducers(reducers)
+  combineReducers(reducers),
+  applyMiddleware(thunk)
 );
 
 ReactDOM.render(
