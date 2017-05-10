@@ -2,6 +2,8 @@
 
 # poilerblate
 
+Boilerplate app to make React bootstrapping easier.
+
 What's included:
 
 - [React](https://github.com/facebook/react)
