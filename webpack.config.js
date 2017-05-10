@@ -43,7 +43,8 @@ module.exports = {
       errors: true
     },
     watchContentBase: true,
-    clientLogLevel: 'none'
+    clientLogLevel: 'none',
+    historyApiFallback: true
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
