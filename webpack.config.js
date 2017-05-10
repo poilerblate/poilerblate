@@ -32,12 +32,12 @@ module.exports = {
     ]
   },
   devServer: {
-    publicPath: '/assets/',
+    publicPath: '/',
     contentBase: path.resolve(__dirname, 'dist'),
     compress: true,
     port: process.env.PORT || 3000,
     open: true,
-    filename: 'bundle.js',
+    filename: 'assets/bundle.js',
     overlay: {
       warnings: false,
       errors: true
