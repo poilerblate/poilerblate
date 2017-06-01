@@ -8,8 +8,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s(a|c)ss$/,
-        exclude: /node_modules/,
+        test: /\.s?[a|c]ss$/,
         use: [
           'style-loader',
           {

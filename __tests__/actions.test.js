@@ -1,4 +1,6 @@
-import EXAMPLE_ACTION_TYPE from '../src/constants/ActionTypes';
+import {
+  EXAMPLE_ACTION_TYPE
+} from '../src/constants/ActionTypes';
 
 import actions from '../src/actions';
 
