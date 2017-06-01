@@ -1,6 +1,6 @@
 {
   "name": "poilerblate",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "React boilerplate",
   "main": "index.js",
   "repository": "github:skope/poilerblate",
