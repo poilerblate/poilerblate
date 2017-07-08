@@ -1,8 +1,8 @@
 import {
   EXAMPLE_ACTION_TYPE
-} from '../src/constants/ActionTypes';
+} from 'constants/ActionTypes';
 
-import actions from '../src/actions';
+import actions from 'actions';
 
 describe('actions', () => {
   describe('example', () => {

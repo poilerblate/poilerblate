@@ -8,9 +8,9 @@ import {
   Link
 } from 'react-router-dom';
 
-import './NotFound.scss';
+import actions from 'actions';
 
-import actions from '../../actions';
+import './NotFound.scss';
 
 export class NotFound extends Component {
   render() {
