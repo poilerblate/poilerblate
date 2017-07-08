@@ -30,6 +30,12 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'src'),
+      'node_modules'
+    ]
+  },
   devServer: {
     publicPath: '/',
     contentBase: path.resolve(__dirname, 'dist'),
