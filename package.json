@@ -27,6 +27,7 @@
     "css-loader": "^0.28.4",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-react": "^7.0.1",
@@ -75,7 +76,16 @@
       }
     },
     "rules": {
-      "no-console": 0
+      "no-console": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/extensions": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "webpack.config.js"
+        }
+      }
     }
   },
   "postcss": {
@@ -87,7 +97,10 @@
   "jest": {
     "moduleNameMapper": {
       "\\.(s(a|c)ss)$": "<rootDir>/node_modules/jest-css-modules"
-    }
+    },
+    "modulePaths": [
+      "src"
+    ]
   },
   "dependencies": {
     "history": "^4.6.1",

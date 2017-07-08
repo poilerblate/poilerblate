@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router';
 
-import { App } from './';
+import { App } from 'components/App';
 
 describe('App component', () => {
   const tree = renderer.create(
