@@ -42,6 +42,7 @@ module.exports = {
     compress: true,
     port: process.env.PORT || 3000,
     open: true,
+    openPage: '',
     filename: 'assets/bundle.js',
     overlay: {
       warnings: false,
