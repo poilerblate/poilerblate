@@ -1,7 +1,5 @@
 node_modules/
 dist/
 
-__snapshots__/
-
 .DS_STORE
 *.swp
