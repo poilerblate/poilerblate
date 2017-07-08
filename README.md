@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/skope/poilerblate.svg?token=jnzpgovcYpqFiQcSVa8D&branch=master)](https://travis-ci.com/skope/poilerblate) [![npm version](https://badge.fury.io/js/poilerblate.svg)](https://badge.fury.io/js/poilerblate)
+[![Build Status](https://travis-ci.com/skope/poilerblate.svg?token=jnzpgovcYpqFiQcSVa8D&branch=master)](https://travis-ci.com/skope/poilerblate) [![npm version](https://badge.fury.io/js/poilerblate.svg)](https://www.npmjs.com/package/poilerblate)
 
 # poilerblate
 
