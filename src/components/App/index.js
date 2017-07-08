@@ -8,9 +8,9 @@ import {
   Link
 } from 'react-router-dom';
 
-import './App.scss';
+import actions from 'actions';
 
-import actions from '../../actions';
+import './App.scss';
 
 export class App extends Component {
   render() {

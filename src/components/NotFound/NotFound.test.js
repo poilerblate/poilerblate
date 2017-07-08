@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router';
 
-import { NotFound } from './';
+import { NotFound } from 'components/NotFound';
 
 describe('NotFound component', () => {
   const tree = renderer.create(

@@ -30,12 +30,19 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'src'),
+      'node_modules'
+    ]
+  },
   devServer: {
     publicPath: '/',
     contentBase: path.resolve(__dirname, 'dist'),
     compress: true,
     port: process.env.PORT || 3000,
     open: true,
+    openPage: '',
     filename: 'assets/bundle.js',
     overlay: {
       warnings: false,

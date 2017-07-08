@@ -1,6 +1,6 @@
 import {
   EXAMPLE_ACTION_TYPE
-} from '../src/constants/ActionTypes';
+} from 'constants/ActionTypes';
 
 import reducers from '../src/reducers';
 
