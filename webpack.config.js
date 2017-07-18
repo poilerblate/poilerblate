@@ -51,7 +51,8 @@ module.exports = {
     },
     watchContentBase: true,
     clientLogLevel: 'none',
-    historyApiFallback: true
+    historyApiFallback: true,
+    stats: process.env.DEBUG ? 'verbose' : 'errors-only'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

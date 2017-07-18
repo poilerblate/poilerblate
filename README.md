@@ -37,3 +37,7 @@ Type `npm start` and development server is launched to http://localhost:3000. If
 Main index page template is located in `src/templates/index.html`.
 
 All code must be located in `src/`.
+
+### Debug mode
+
+You can add an environment variable `DEBUG` to make webpack output be more verbose.
