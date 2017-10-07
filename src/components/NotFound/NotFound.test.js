@@ -1,7 +1,10 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 import { NotFound } from 'components/NotFound';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('NotFound component', () => {
   it('should contain a wrapper div with a classname', () => {
