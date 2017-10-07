@@ -1,8 +1,5 @@
-import {
-  EXAMPLE_ACTION_TYPE
-} from 'constants/ActionTypes';
-
-import reducers from '../src/reducers';
+import * as types from 'constants/ActionTypes';
+import reducers from 'reducers';
 
 describe('reducers', () => {
   describe('example', () => {
@@ -16,7 +13,7 @@ describe('reducers', () => {
       const value = 'bar';
 
       expect(reducers.example(undefined, {
-        type: EXAMPLE_ACTION_TYPE,
+        type: types.EXAMPLE_ACTION_TYPE,
         example: value
       })).toEqual({
         example: value

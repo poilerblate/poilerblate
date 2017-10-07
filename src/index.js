@@ -15,10 +15,10 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 
-import reducers from './reducers';
+import reducers from 'reducers';
 
-import AppComponent from './components/App';
-import NotFoundComponent from './components/NotFound';
+import AppComponent from 'components/App';
+import NotFoundComponent from 'components/NotFound';
 
 let store = createStore(
   combineReducers(reducers),

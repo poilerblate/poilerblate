@@ -1,4 +1,5 @@
 const path = require('path');
+const pjson = require('./package.json');
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -50,7 +51,8 @@ module.exports = {
     },
     watchContentBase: true,
     clientLogLevel: 'none',
-    historyApiFallback: true
+    historyApiFallback: true,
+    stats: process.env.DEBUG ? 'verbose' : 'errors-only'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -59,7 +61,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'poilerblate',
+      title: pjson.name,
       template: 'src/templates/index.html',
       inject: 'body',
       cache: false
