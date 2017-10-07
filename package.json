@@ -3,9 +3,9 @@
   "version": "0.5.0",
   "description": "React boilerplate",
   "main": "index.js",
-  "repository": "github:skope/poilerblate",
+  "repository": "github:poilerblate/poilerblate",
   "bugs": {
-    "url": "https://github.com/skope/poilerblate/issues"
+    "url": "https://github.com/poilerblate/poilerblate/issues"
   },
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
