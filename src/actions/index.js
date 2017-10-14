@@ -1,5 +1,5 @@
-import example from 'actions/example';
+import changeExample from 'actions/example';
 
 export default {
-  example
+  changeExample
 };

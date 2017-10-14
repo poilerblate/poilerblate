@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import {
   withRouter,
@@ -20,21 +18,19 @@ export class App extends Component {
         <Link to="/foo">
           Link to non-existent route
         </Link>
+        <button onClick={() => this.props.changeExample('bar')}>Fire example action</button>
+        <p>Example state value is currently <span className="example">{this.props.example.example}</span></p>
       </div>
     )
   }
 }
 
 App.propTypes = {
-  actions: PropTypes.object,
-  example: PropTypes.object
+  example: PropTypes.object,
+  changeExample: PropTypes.func
 };
 
 export default withRouter(connect(
   (state) => state,
-  (dispatch) => {
-    return {
-      actions: bindActionCreators(actions, dispatch)
-    }
-  }
+  actions
 )(App));
