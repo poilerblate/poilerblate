@@ -6,8 +6,8 @@ describe('actions', () => {
     it('should return dispatchable object', () => {
       const param = 'foo';
 
-      expect(actions.example(param)).toEqual({
-        type: types.EXAMPLE_ACTION_TYPE,
+      expect(actions.changeExample(param)).toEqual({
+        type: types.CHANGE_EXAMPLE_ACTION_TYPE,
         example: param
       });
     });

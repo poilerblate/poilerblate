@@ -13,7 +13,7 @@ describe('reducers', () => {
       const value = 'bar';
 
       expect(reducers.example(undefined, {
-        type: types.EXAMPLE_ACTION_TYPE,
+        type: types.CHANGE_EXAMPLE_ACTION_TYPE,
         example: value
       })).toEqual({
         example: value

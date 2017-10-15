@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import {
   withRouter,
@@ -25,14 +23,10 @@ export class NotFound extends Component {
 
 NotFound.propTypes = {
   actions: PropTypes.object,
-  example: PropTypes.object
+  changeExample: PropTypes.func
 };
 
 export default withRouter(connect(
-  (state) => state,
-  (dispatch) => {
-    return {
-      actions: bindActionCreators(actions, dispatch)
-    }
-  }
+  state => ({ example: state.example }),
+  actions
 )(NotFound));
