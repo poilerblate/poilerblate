@@ -11,9 +11,9 @@ import { Provider } from 'react-redux';
 import {
   createStore,
   combineReducers,
-  applyMiddleware,
-  compose
+  applyMiddleware
 } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import reducers from 'reducers';
@@ -23,10 +23,7 @@ import NotFoundComponent from 'components/NotFound';
 
 let store = createStore(
   combineReducers(reducers),
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
+  composeWithDevTools(applyMiddleware(thunk))
 );
 
 ReactDOM.render(
