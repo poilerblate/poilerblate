@@ -37,6 +37,7 @@ module.exports = {
       'node_modules'
     ]
   },
+  devtool: 'source-map',
   devServer: {
     publicPath: '/',
     contentBase: path.resolve(__dirname, 'dist'),
