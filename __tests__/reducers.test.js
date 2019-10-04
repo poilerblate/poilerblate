@@ -6,7 +6,7 @@ describe('reducers', () => {
 
     const state = {
       example: 'foo'
-    }
+    };
 
     it('should return the initial state', () => {
       expect(reducers.example(undefined, {})).toEqual(state);
