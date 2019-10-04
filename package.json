@@ -15,14 +15,15 @@
   "author": "Sami Keinänen <skope@iki.fi>",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
@@ -31,7 +32,7 @@
     "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react": "^7.16.0",
     "extract-loader": "^3.1.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^4.2.0",
@@ -52,12 +53,12 @@
   },
   "babel": {
     "presets": [
-      "env",
-      "react"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ],
     "plugins": [
-      "transform-react-jsx",
-      "transform-object-rest-spread"
+      "@babel/plugin-transform-react-jsx",
+      "@babel/plugin-proposal-object-rest-spread"
     ]
   },
   "eslintConfig": {
