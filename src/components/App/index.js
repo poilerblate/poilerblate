@@ -18,8 +18,12 @@ export class App extends Component {
         <Link to="/foo">
           Link to non-existent route
         </Link>
-        <button onClick={() => this.props.changeExample('bar')}>Fire example action</button>
-        <p>Example state value is currently <span className="reducerExample">{this.props.example.example}</span></p>
+        <button onClick={() => this.props.changeExample('bar')}>
+          Fire example action
+        </button>
+        <p>
+          Example state value is currently <span className="reducerExample">{this.props.example.example}</span>
+        </p>
       </div>
     )
   }

@@ -4,5 +4,5 @@ export default function changeExample(example) {
   return {
     type: types.CHANGE_EXAMPLE_ACTION_TYPE,
     example
-  }
+  };
 }
