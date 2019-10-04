@@ -13,20 +13,19 @@ What's included:
 - [React Redux](https://github.com/reactjs/react-redux)
 - [SASS](http://sass-lang.com/)
 - [Jest](https://facebook.github.io/jest/)
+- [webpack](https://webpack.js.org/)
 
 ## Building
 
-Issue command `npm run build`.
-
-Production ready bundle is stored in `dist/` and can be used as-is.
+Issue command `npm run build`. Production ready bundle is stored in `dist/` and can be copied to the server.
 
 ## Running tests
 
 Issue command `npm test`. It runs test cases once and exits.
 
-If you want to run tests in watch mode, you can either install [jest](https://facebook.github.io/jest/) globally with `npm i -g jest` and call it with `jest --watch` or do it with npm scripts with `npm test -- --watch`.
+If you want to run tests in watch mode, you can either install [jest](https://facebook.github.io/jest/) globally with `npm i -g jest` and call it with `jest --watch` or do it with npm scripts with `npm test -- --watch`. Latter does not require you to install `jest` globally.
 
-Component specific tests are stored in `src/components/<ComponentName>/<ComponentName>.test.js` and actions/reducers tests in `__tests__/`.
+Component specific tests are stored in `src/components/<ComponentName>/<ComponentName>.test.js` and actions/reducers tests in `__tests__/` respectively.
 
 ## Development
 
