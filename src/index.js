@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
 } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
@@ -12,7 +12,7 @@ import {
   createStore,
   combineReducers,
   applyMiddleware,
-  compose
+  compose,
 } from 'redux';
 import thunk from 'redux-thunk';
 
@@ -21,16 +21,18 @@ import reducers from 'reducers';
 import AppComponent from 'components/App';
 import NotFoundComponent from 'components/NotFound';
 
-let store = createStore(
+const store = createStore(
   combineReducers(reducers),
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
-    compose(
+  // eslint-disable-next-line no-underscore-dangle
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    ? compose(
       applyMiddleware(thunk),
-      window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
-    ) :
-    compose(
-      applyMiddleware(thunk),
+      // eslint-disable-next-line no-underscore-dangle
+      window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__(),
     )
+    : compose(
+      applyMiddleware(thunk),
+    ),
 );
 
 ReactDOM.render(
@@ -42,5 +44,5 @@ ReactDOM.render(
       </Switch>
     </Router>
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
