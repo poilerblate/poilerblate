@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
   withRouter,
-  Link
+  Link,
 } from 'react-router-dom';
 
 import actions from 'actions';
@@ -25,20 +25,20 @@ export class App extends Component {
           Example state value is currently <span className="reducerExample">{this.props.example.example}</span>
         </p>
       </div>
-    )
+    );
   }
 }
 
 App.propTypes = {
   example: PropTypes.object,
-  changeExample: PropTypes.func
+  changeExample: PropTypes.func,
 };
 
 App.defaultProps = {
-  example: { example: 'foo' }
-}
+  example: { example: 'foo' },
+};
 
 export default withRouter(connect(
-  state => ({ example: state.example }),
-  actions
+  (state) => ({ example: state.example }),
+  actions,
 )(App));
