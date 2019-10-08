@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/poilerblate/poilerblate.svg?branch=master)](https://travis-ci.org/poilerblate/poilerblate) [![npm version](https://badge.fury.io/js/poilerblate.svg)](https://www.npmjs.com/package/poilerblate)
 
+<img src="logo.png" style="width: 240px">
+
 # poilerblate
 
 Boilerplate app to make React bootstrapping easier.
