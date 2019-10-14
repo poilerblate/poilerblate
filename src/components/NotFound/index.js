@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import {
-  withRouter,
-  Link,
-} from 'react-router-dom';
+import './NotFound.scss';
 
 import actions from 'actions';
-
-import './NotFound.scss';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
 
 export class NotFound extends Component {
   // eslint-disable-next-line class-methods-use-this
@@ -27,7 +23,9 @@ NotFound.propTypes = {
   changeExample: PropTypes.func,
 };
 
-export default withRouter(connect(
-  (state) => ({ example: state.example }),
-  actions,
-)(NotFound));
+export default withRouter(
+  connect(
+    (state) => ({ example: state.example }),
+    actions,
+  )(NotFound),
+);
