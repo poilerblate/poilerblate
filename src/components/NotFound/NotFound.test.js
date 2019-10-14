@@ -1,8 +1,7 @@
-import React from 'react';
+import { NotFound } from 'components/NotFound';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-
-import { NotFound } from 'components/NotFound';
+import React from 'react';
 
 Enzyme.configure({ adapter: new Adapter() });
 
