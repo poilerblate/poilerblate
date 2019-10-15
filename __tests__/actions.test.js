@@ -1,5 +1,5 @@
-import * as types from 'constants/ActionTypes';
 import actions from 'actions';
+import * as types from 'constants/ActionTypes';
 
 describe('actions', () => {
   describe('example', () => {
@@ -8,7 +8,7 @@ describe('actions', () => {
 
       expect(actions.changeExample(param)).toEqual({
         type: types.CHANGE_EXAMPLE_ACTION_TYPE,
-        example: param
+        example: param,
       });
     });
   });
