@@ -1,4 +1,4 @@
-import { NotFound } from 'components/NotFound';
+import NotFound from 'components/NotFound';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
